@@ -6,7 +6,7 @@
 /*   By: obouadel <obouadel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 11:35:01 by obouadel          #+#    #+#             */
-/*   Updated: 2021/11/20 12:53:00 by obouadel         ###   ########.fr       */
+/*   Updated: 2021/11/20 15:37:42 by obouadel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *src)
 	int		i;
 
 	ptr = (char *) malloc((ft_strlen(src) + 1) * sizeof(char));
-	if (ptr == 0)
+	if (ptr == NULL)
 		return (0);
 	i = 0;
 	while (src[i])

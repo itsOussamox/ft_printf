@@ -6,7 +6,7 @@
 #    By: obouadel <obouadel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 09:33:09 by obouadel          #+#    #+#              #
-#    Updated: 2021/11/20 12:58:31 by obouadel         ###   ########.fr        #
+#    Updated: 2021/11/20 14:53:08 by obouadel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs ${NAME} ${OBJS}
 
-%.o: %.c 
+%.o: %.c $(INCLUDES)/ft_printf.h
 	$(CC) -I $(INCLUDES) $(FLAGS) -c $< -o $@
 
 clean:

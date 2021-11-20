@@ -6,7 +6,7 @@
 /*   By: obouadel <obouadel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 17:34:15 by obouadel          #+#    #+#             */
-/*   Updated: 2021/11/20 12:54:01 by obouadel         ###   ########.fr       */
+/*   Updated: 2021/11/20 15:27:52 by obouadel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*alloc;
 
 	alloc = (void *)malloc(count * size);
-	if (!alloc)
-		return (NULL);
 	ft_bzero(alloc, count * size);
 	return (alloc);
 }
